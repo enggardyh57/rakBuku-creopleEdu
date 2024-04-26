@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <!-- Link Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Strike&display=swap"
+        rel="stylesheet"> 
+   
+  <title>APLIKASI RAK BUKU | ENGGAR DYAH</title>
+</head>
+<body>
+  <header >
+    <h1 class="header_judul">Perpustakaan Creople Edu</h1>
+  </header>
+  <div class="container">
+    <div class="book-form">
+      <h2>Tambahkan Informasi Buku</h2>
+      <label for="book-title">Judul Buku</label>
+      <input type="text" id="book-title" placeholder="Masukkan judul buku">
+      <label for="book-author">Penulis</label>
+      <input type="text" id="book-author" placeholder="Masukkan penulis buku">
+      <label for="book-year">Tahun Terbit</label>
+      <input type="number" id="book-year" placeholder="Masukkan tahun terbit buku">
+      <label for="book-shelf">Status Buku</label>
+      <select id="book-shelf">
+        <option value="shelf1">Belum selesai dibaca</option>
+        <option value="shelf2">Sudah selesai dibaca</option>
+      </select>
+    <button id="bookSubmit" type="button" onclick="tambahBuku()">Tambahkan Buku</button>
+    </div>
+
+    
+
+    <div class="bookshelves">
+      <ul id="shelf1-books" class="bookshelf">
+        <h2>Belum selesai dibaca</h2>
+      </ul>
+      <ul id="shelf2-books" class="bookshelf">
+        <h2>Sudah selesai dibaca</h2>
+      </ul>
+    </div>
+  </div>
+
+ 
+<footer class="footer">
+    <p>CREOPLE EDU | 2024</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
